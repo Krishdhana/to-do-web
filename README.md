@@ -2,5 +2,8 @@
 
 A Simple and easy to use To-do list Application
 
-# Minimal and Glossy UI Style
-# Easy to use for everyone
+visit: https://krishdhana.github.io/to-do-web/
+
+Features:
+Minimal and Glossy UI Style
+Easy to use for everyone
