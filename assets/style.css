@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  transition: all 0.3s;
+  font-family: "Roboto Mono", monospace;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  height: 55vh;
+  overflow-y: scroll;
+}
+
+li {
+  font-weight: 500;
+  margin: 10px;
+  font-size: 1.5rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+.color-text {
+  position: absolute;
+  text-align: center;
+  margin-right: 46.5%;
+}
+.p1 {
+  font-family: "Encode Sans SC", sans-serif;
+  font-size: 2rem;
+  margin: 1.5rem;
+  user-select: none;
+  text-align: center;
+}
+
+span {
+  margin: 1rem;
+}
+.p2 {
+  margin: 2rem;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+p {
+  position: relative;
+  /* margin: 10px; */
+  right: 20px;
+  /* font-size: 1rem; */
+}
+
+.bottom {
+  display: grid;
+  height: max-content;
+  grid-template: auto / 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgcolor {
+  height: 30px;
+  width: 60px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.text {
+  padding: 0.5rem 10px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  width: 500px;
+  height: 40px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+}
+
+.btn-add,
+.btn-clear {
+  width: 200px;
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 0.5rem;
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 20px;
+  margin: 5px;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.color-text {
+  display: flex;
+  width: 100vw;
+  margin: 1rem;
+  justify-content: center;
+}
+
+/* Hover Animations */
+
+.text:focus {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.233);
+}
+.btn-add:hover,
+.btn-clear:hover,
+.bgcolor:hover {
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.13);
+  transform: scale(103%);
+}
+
+.btn-add:active,
+.btn-clear:active {
+  transform: scale(100%);
+}
